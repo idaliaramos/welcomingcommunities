@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-// import Card from './components/CardComponent'
-import "./App.css";
-import LandingPage from "./components/LandingPage";
-import CulturePage from "./components/CulturePage";
-import Map from "./components/Map";
+import './App.css';
+import LandingPage from './components/LandingPage'
+import CulturePage from './components/CulturePage'
+import Map from './components/Map'
+import OrganizationMap from './components/OrganizationMap'
+import { Button, Header, Image, Modal } from 'semantic-ui-react'
 var api_key = process.env.API_KEY;
 
 class App extends Component {
@@ -33,8 +34,24 @@ class App extends Component {
         <header className="App-header">
           <LandingPage />
         </header>
+<<<<<<< HEAD
         <Map></Map>
         <CulturePage countries={this.state.data} />
+=======
+
+        <CulturePage countries={this.state.data}/>
+
+        <Modal trigger={<Button>Get Involved</Button>}>
+          <Modal.Header>Get Involved</Modal.Header>
+          <Modal.Content>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGlPX7DhNrSbsibAcO_JCbMr74JAJLQSKxwLpOc0OnWD9VuA/viewform?embedded=true" width="640" height="947" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
+          </Modal.Content>
+        </Modal>
+
+        <h1>Resettlement Voluntary Agency Local Affiliates</h1>
+        <OrganizationMap/>
+
+>>>>>>> e9e40caa957276ca8956f100c00d563a3e19d4f4
       </div>
     );
   }
