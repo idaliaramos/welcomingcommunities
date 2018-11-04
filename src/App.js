@@ -56,6 +56,7 @@ class App extends Component {
             </iframe>
           </Modal.Content>
         </Modal>
+        <Map/>
         <OrganizationMap />
         <Embedded />
       </div>
