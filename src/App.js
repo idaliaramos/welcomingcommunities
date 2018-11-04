@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
- import NavBar from './components/NavBar'
-import './App.css';
-import CallToActionInfo from './components/CallToActionInfo'
-import LandingPage from './components/LandingPage'
-import CulturePage from './components/CulturePage'
-import Map from './components/Map'
-import OrganizationMap from './components/OrganizationMap'
-import Embedded from './components/Embedded'
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import React, { Component } from "react";
+import NavBar from "./components/NavBar";
+import "./App.css";
+import CallToActionInfo from "./components/CallToActionInfo";
+import LandingPage from "./components/LandingPage";
+import CulturePage from "./components/CulturePage";
+import Map from "./components/Map";
+import OrganizationMap from "./components/OrganizationMap";
+import Embedded from "./components/Embedded";
+import { Button, Header, Image, Modal } from "semantic-ui-react";
 var api_key = process.env.API_KEY;
 
 class App extends Component {
@@ -34,21 +34,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar/>
+        {/* <NavBar/> */}
         <header className="App-header">
-         <LandingPage/>
+          <LandingPage />
         </header>
-        <CulturePage countries={this.state.data}/>
-        <CallToActionInfo/>
+        <CulturePage countries={this.state.data} />
+        <CallToActionInfo />
         <Modal trigger={<Button>Get Involved</Button>}>
           <Modal.Header>Get Involved</Modal.Header>
 
           <Modal.Content>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGlPX7DhNrSbsibAcO_JCbMr74JAJLQSKxwLpOc0OnWD9VuA/viewform?embedded=true" width="640" height="947" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLScGlPX7DhNrSbsibAcO_JCbMr74JAJLQSKxwLpOc0OnWD9VuA/viewform?embedded=true"
+              width="640"
+              height="947"
+              frameBorder="0"
+              marginHeight="0"
+              marginWidth="0"
+            >
+              Loading...
+            </iframe>
           </Modal.Content>
         </Modal>
-        <OrganizationMap/>
-        <Embedded/>
+        <OrganizationMap />
+        <Embedded />
       </div>
     );
   }
