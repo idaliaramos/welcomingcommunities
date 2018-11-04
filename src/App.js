@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+ import NavBar from './components/NavBar'
 import './App.css';
 import LandingPage from './components/LandingPage'
 import CulturePage from './components/CulturePage'
@@ -30,9 +31,11 @@ class App extends Component {
   }
   render() {
     return (
+
       <div className="App">
+      <NavBar/>
         <header className="App-header">
-          <LandingPage />
+         <LandingPage/>
         </header>
 
         <CulturePage countries={this.state.data}/>
