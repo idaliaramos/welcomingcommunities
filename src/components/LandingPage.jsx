@@ -3,17 +3,8 @@ import React, { Component } from 'react'
 import {
   Button,
   Container,
-  Divider,
-  Grid,
   Header,
   Icon,
-  Image,
-  List,
-  Menu,
-  Responsive,
-  Segment,
-  Sidebar,
-  Visibility,
 } from 'semantic-ui-react'
 
 /* eslint-disable react/no-multi-comp */
@@ -37,7 +28,7 @@ const LandingPage = ({ mobile }) => (
       }}
     />
     <Header
-      as='h2'
+      as='h1'
       content='In a time of division, we must unite,care, and learn from each other'
       inverted
       style={{

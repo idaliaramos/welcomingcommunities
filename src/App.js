@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
  import NavBar from './components/NavBar'
 import './App.css';
+import CallToActionInfo from './components/CallToActionInfo'
 import LandingPage from './components/LandingPage'
 import CulturePage from './components/CulturePage'
 import Map from './components/Map'
@@ -32,24 +33,22 @@ class App extends Component {
   }
   render() {
     return (
-
       <div className="App">
-      <NavBar/>
+        <NavBar/>
         <header className="App-header">
          <LandingPage/>
         </header>
-
         <CulturePage countries={this.state.data}/>
-        <Map></Map>
+        <CallToActionInfo/>
         <Modal trigger={<Button>Get Involved</Button>}>
           <Modal.Header>Get Involved</Modal.Header>
+
           <Modal.Content>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGlPX7DhNrSbsibAcO_JCbMr74JAJLQSKxwLpOc0OnWD9VuA/viewform?embedded=true" width="640" height="947" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
           </Modal.Content>
         </Modal>
         <OrganizationMap/>
         <Embedded/>
-
       </div>
     );
   }
