@@ -4,14 +4,23 @@ import CountrySegmentComponent from './CountrySegmentComponent'
 import CardComponent from './CardComponent'
 import { Image } from 'semantic-ui-react'
 
-import imageSrc from './cultural-background.png';
+import imageSrc from './culturexplore.png';
 
 class CulturePage extends Component {
   render() {
     let data= this.props
 
     return (
-      <Image src={imageSrc}/>
+      <div>
+        <header>
+          <div className='header'>Explore the Beauty of their Countries</div>
+        </header>
+        <Image src={imageSrc}/>
+      </div>
+
+      //  <div className="CulturePage">
+      //    <header className="culture-header">
+
      //  <div className="CulturePage">
      //    <header className="culture-header">
      //
