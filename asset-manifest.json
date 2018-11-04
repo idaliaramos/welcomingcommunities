@@ -1,0 +1,21 @@
+{
+  "main.css": "/welcomingcommunities/static/css/main.7221ea49.chunk.css",
+  "main.js": "/welcomingcommunities/static/js/main.ddba53c1.chunk.js",
+  "main.js.map": "/welcomingcommunities/static/js/main.ddba53c1.chunk.js.map",
+  "static/css/1.7d0059e8.chunk.css": "/welcomingcommunities/static/css/1.7d0059e8.chunk.css",
+  "static/js/1.3466c70b.chunk.js": "/welcomingcommunities/static/js/1.3466c70b.chunk.js",
+  "static/js/1.3466c70b.chunk.js.map": "/welcomingcommunities/static/js/1.3466c70b.chunk.js.map",
+  "runtime~main.js": "/welcomingcommunities/static/js/runtime~main.5b254bfa.js",
+  "runtime~main.js.map": "/welcomingcommunities/static/js/runtime~main.5b254bfa.js.map",
+  "static/media/semantic.min.css": "/welcomingcommunities/static/media/brand-icons.a1a749e8.svg",
+  "static/media/culturexplore.png": "/welcomingcommunities/static/media/culturexplore.d5fa5613.png",
+  "static/media/cities.csv": "/welcomingcommunities/static/media/cities.09979f01.csv",
+  "static/media/grouped_by_and_sum.csv": "/welcomingcommunities/static/media/grouped_by_and_sum.06c24dfb.csv",
+  "static/media/us-state-names.tsv": "/welcomingcommunities/static/media/us-state-names.88733d26.tsv",
+  "static/media/Voluntary-Agencies-geocode.csv": "/welcomingcommunities/static/media/Voluntary-Agencies-geocode.f7762c3f.csv",
+  "static/css/main.7221ea49.chunk.css.map": "/welcomingcommunities/static/css/main.7221ea49.chunk.css.map",
+  "static/css/1.7d0059e8.chunk.css.map": "/welcomingcommunities/static/css/1.7d0059e8.chunk.css.map",
+  "index.html": "/welcomingcommunities/index.html",
+  "precache-manifest.a0c877fed167dc547c612cbb69449a71.js": "/welcomingcommunities/precache-manifest.a0c877fed167dc547c612cbb69449a71.js",
+  "service-worker.js": "/welcomingcommunities/service-worker.js"
+}
