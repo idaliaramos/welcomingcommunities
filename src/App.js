@@ -34,13 +34,9 @@ class App extends Component {
         <header className="App-header">
           <LandingPage />
         </header>
-<<<<<<< HEAD
-        <Map></Map>
-        <CulturePage countries={this.state.data} />
-=======
 
         <CulturePage countries={this.state.data}/>
-
+        <Map></Map>
         <Modal trigger={<Button>Get Involved</Button>}>
           <Modal.Header>Get Involved</Modal.Header>
           <Modal.Content>
@@ -51,7 +47,6 @@ class App extends Component {
         <h1>Resettlement Voluntary Agency Local Affiliates</h1>
         <OrganizationMap/>
 
->>>>>>> e9e40caa957276ca8956f100c00d563a3e19d4f4
       </div>
     );
   }
