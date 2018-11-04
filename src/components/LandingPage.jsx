@@ -27,7 +27,7 @@ const LandingPage = ({ mobile }) => (
 
     <Header
       as='h1'
-      content='Be part of the Revolution'
+      content='Welcoming Commmunity'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -48,7 +48,7 @@ const LandingPage = ({ mobile }) => (
       }}
     />
     <Button color='teal' size='huge'>
-      Get Involved
+      Join Us!
       <Icon name='right arrow' />
     </Button>
   </Container>
