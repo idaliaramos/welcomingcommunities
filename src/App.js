@@ -40,8 +40,8 @@ class App extends Component {
         </header>
         <CulturePage countries={this.state.data} />
         <CallToActionInfo />
-        <Modal trigger={<Button>Get Involved</Button>}>
-          <Modal.Header>Get Involved</Modal.Header>
+        <Modal trigger={<Button color='orange' size='massive'>Join Us!</Button>}>
+          <Modal.Header >Get Involved</Modal.Header>
 
           <Modal.Content>
             <iframe
