@@ -7,12 +7,28 @@ import cityCsv from "./map_data/cities.csv";
 import sumCsv from "./map_data/grouped_by_and_sum.csv";
 import "./map_data/map.css";
 class Map extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { width: window.innerWidth, height: window.innerHeight };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    console.log(window.innerWidth, window.innerHeight, this);
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    console.log(this.state.width, this.state.height);
+  }
   state = {
     name_id_map: {},
     id_name_map: {},
     cities: [],
     g: null,
-    dot: null
+    dot: null,
+    zoomed: false
   };
   data = async () => {
     const name_id_map = {};
@@ -37,17 +53,19 @@ class Map extends Component {
     return { r1, r2, r3 };
   };
   componentDidMount() {
+    window.addEventListener("resize", this.updateWindowDimensions);
+    this.updateWindowDimensions();
     const that = this;
-    var width = 960,
-      height = 500,
-      active = d3.select(null);
-
+    let active = d3.select(null);
+    // console.log(this.state);
+    const width = this.state.width;
+    const height = this.state.height;
     var projection = d3
       .geoAlbersUsa()
-      .scale(1000)
+      .scale(width)
       .translate([width / 2, height / 2]);
-    var zoomed = false;
     var path = d3.geoPath().projection(projection);
+    console.log(this.state.width, this.state.height);
     var svg = d3
       .select("svg")
       .attr("width", width)
@@ -93,7 +111,7 @@ class Map extends Component {
         })
         .on("click", clicked)
         .on("mouseover", function(d) {
-          if (zoomed) {
+          if (that.state.zoomed) {
             return;
           }
           // console.log(d)
@@ -167,7 +185,7 @@ class Map extends Component {
     }
     function clicked(d) {
       if (active.node() === this) return reset();
-      zoomed = true;
+      that.setState({ zoomed: true });
       tooltip.transition().style("opacity", 0);
       // dot.attr("opacity", 1)
       that.state.dot.classed("dp_none", false);
@@ -190,7 +208,7 @@ class Map extends Component {
     }
 
     function reset() {
-      zoomed = false;
+      that.setState({ zoomed: false });
       active.classed("active", false);
       active = d3.select(null);
       that.state.dot.classed("dp_none", true);
@@ -203,8 +221,8 @@ class Map extends Component {
   }
   render() {
     return (
-      <div style={{ width: "100%", height: "30%px" }}>
-        <h1>Total number of refugees settled down in States in 2002-2018</h1>
+      <div>
+        <h1>Total number of refugees resettled in each {this.state.zoomed ? 'city' : 'state'} in 2002-2018</h1>
         <svg />
       </div>
     );
