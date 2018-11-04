@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { Container, Header, Card, Image } from 'semantic-ui-react'
+import CardComponent from './CardComponent'
 
 const CountrySegmentComponent = () => (
   <div>
@@ -15,7 +16,7 @@ const CountrySegmentComponent = () => (
     Since the 1960s, the Congolese have endured over two decades of armed conflict with over 5.4 million people dead due to war-related causes, making it the deadliest conflict since World War II.
     Congolese armed groups and elements of the army have a long, brutal history of recruiting child soldiers. The United Nations report at least 1,000 cases of child soldier recruitment between January 2012 and August 2013.
     The oldest national park in Africa is the Congo’s Virunga National Park. It is home to rare mountain gorillas, lions, and elephants. The park is currently under threat by the UK oil company, Soco, which has begun oil exploration there.
-      </p>
+   </p>
   <Card>
     <Card.Content>
       <Card.Header>Food</Card.Header>
