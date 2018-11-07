@@ -1,22 +1,71 @@
 .App {
+  text-align: left;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.center {
   text-align: center;
-
 }
 p {
-  font-size: 2rem;
+  font-size: 1.3rem;
+}
+.button{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+.left {
+  text-align: left;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.ui.image.medium {
+  width:800px;
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  object-fit: cover;
+}
+.img-wrap {
+  position: relative;
+}
+.img-wrap:hover .img-description {
+  visibility: visible;
+  opacity: 2;
+}
+.img-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  background: lightseagreen;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.5rem;
+  line-height: 30px;
+  text-indent: 5px;
 
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: center;*/
   font-size: calc(10px + 2vmin);
   color: white;
   background-image: url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=1650&q=80') !important;

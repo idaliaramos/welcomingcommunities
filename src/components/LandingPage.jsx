@@ -14,8 +14,6 @@ import {
 const LandingPage = ({ mobile }) => (
 
   <Container text >
-    {/* <div className='background-home'></div> */}
-
     <Header
       as='h1'
       content='Welcoming Commmunity'
@@ -38,10 +36,12 @@ const LandingPage = ({ mobile }) => (
 
       }}
     />
+    <div className='button'>
     <Button color='teal' size='huge'>
       Join Us!
       <Icon name='right arrow' />
     </Button>
+        </div>
   </Container>
 )
 export default LandingPage

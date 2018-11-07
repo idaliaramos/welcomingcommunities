@@ -39,11 +39,11 @@ class App extends Component {
           <LandingPage />
         </header>
         <CulturePage countries={this.state.data} />
-        <CallToActionInfo />
-        <Modal trigger={<Button color='orange' size='massive'>Join Us!</Button>}>
-          <Modal.Header >Get Involved</Modal.Header>
+        {/* <CallToActionInfo /> */}
+        {/* <Modal trigger={<Button color='orange' size='massive'>Join Us!</Button>}> */}
+          {/* <Modal.Header >Get Involved</Modal.Header> */}
 
-          <Modal.Content>
+          {/* <Modal.Content>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLScGlPX7DhNrSbsibAcO_JCbMr74JAJLQSKxwLpOc0OnWD9VuA/viewform?embedded=true"
               width="640"
@@ -54,11 +54,11 @@ class App extends Component {
             >
               Loading...
             </iframe>
-          </Modal.Content>
-        </Modal>
+          </Modal.Content> */}
+        {/* </Modal>
         <Map/>
         <OrganizationMap />
-        <Embedded />
+        <Embedded /> */}
       </div>
     );
   }
