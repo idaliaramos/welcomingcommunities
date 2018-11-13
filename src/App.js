@@ -7,7 +7,6 @@ import CulturePage from "./components/CulturePage";
 import Map from "./components/Map";
 import OrganizationMap from "./components/OrganizationMap";
 import Embedded from "./components/Embedded";
-import { Button, Header, Image, Modal } from "semantic-ui-react";
 var api_key = process.env.API_KEY;
 
 class App extends Component {
@@ -39,26 +38,10 @@ class App extends Component {
           <LandingPage />
         </header>
         <CulturePage countries={this.state.data} />
-        {/* <CallToActionInfo /> */}
-        {/* <Modal trigger={<Button color='orange' size='massive'>Join Us!</Button>}> */}
-          {/* <Modal.Header >Get Involved</Modal.Header> */}
-
-          {/* <Modal.Content>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLScGlPX7DhNrSbsibAcO_JCbMr74JAJLQSKxwLpOc0OnWD9VuA/viewform?embedded=true"
-              width="640"
-              height="947"
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
-            >
-              Loading...
-            </iframe>
-          </Modal.Content> */}
-        {/* </Modal>
+        <CallToActionInfo />
         <Map/>
         <OrganizationMap />
-        <Embedded /> */}
+        <Embedded />
       </div>
     );
   }
